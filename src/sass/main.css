@@ -167,7 +167,7 @@ header .logo-image {
     pointer-events: none;
     outline: none;
     max-height: 0;
-    transition: max-height ease-in-out 0.3s;
+    transition: max-height ease-out 0.3s;
   }
 }
 
