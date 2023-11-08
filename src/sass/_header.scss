@@ -153,8 +153,10 @@ header {
     flex-direction: column;
     position: fixed;
     padding-block: 9rem;
+    background-color: #fff;
+    background-image: linear-gradient(#fff, #fff);
+    overflow: hidden;
 
-    background-color: #ddd;
     opacity: inherit;
     width: 50vw;
     overflow-y: hidden;
@@ -163,7 +165,7 @@ header {
     z-index: 2;
     opacity: 1;
     pointer-events: all;
-    outline: invert;
+    // outline: invert;
     top: 0;
     right: 0;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
@@ -173,6 +175,8 @@ header {
     flex-direction: column;
     display: grid;
     grid-template-columns: 1fr;
+    gap: 20px;
+    // background-image: linear-gradient(#fff, #fff);
 
     .nav__link,
     .btn[data-action] {

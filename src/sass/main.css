@@ -283,7 +283,9 @@ header .logo-image {
   flex-direction: column;
   position: fixed;
   padding-block: 9rem;
-  background-color: #ddd;
+  background-color: #fff;
+  background-image: linear-gradient(#fff, #fff);
+  overflow: hidden;
   opacity: inherit;
   width: 50vw;
   overflow-y: hidden;
@@ -292,7 +294,6 @@ header .logo-image {
   z-index: 2;
   opacity: 1;
   pointer-events: all;
-  outline: invert;
   top: 0;
   right: 0;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
@@ -301,6 +302,7 @@ header .logo-image {
   flex-direction: column;
   display: grid;
   grid-template-columns: 1fr;
+  gap: 20px;
 }
 .open .nav__links .nav__link,
 .open .nav__links .btn[data-action] {
