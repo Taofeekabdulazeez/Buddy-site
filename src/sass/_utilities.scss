@@ -24,25 +24,40 @@
   font-weight: $fw-semi-bold;
   font-size: 1.4rem;
   padding: 0.9em 1.6em;
+  border: 2px solid transparent;
   border-radius: 10vw;
   box-shadow: $custom-shadow;
+  transition: all 0.3s;
 }
 
 .btn[data-section] {
   background-color: none;
   background-color: $clr-neutral-100;
   color: $clr-neutral-900;
+
+  &:hover {
+    // color: $clr-primary;
+    color: #11b87b;
+  }
 }
 
 .btn[data-cta] {
   background-color: $clr-primary;
   color: $clr-neutral-100;
+  &:hover {
+    background-color: #11b87b;
+  }
 }
 
 .btn[data-inverted],
 .btn[data-section].active {
   background-color: $clr-primary-tint;
   color: $clr-primary;
+  &:hover {
+    border-top: 1.5px solid $clr-primary;
+    border-bottom: 1.5px solid $clr-primary;
+    color: $clr-primary;
+  }
 }
 
 .heading {
