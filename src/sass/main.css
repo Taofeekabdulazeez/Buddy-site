@@ -176,7 +176,7 @@ header .logo-image {
 }
 @media (max-width: 68em) {
   .container__links {
-    gap: 9vw;
+    gap: 6vw;
   }
 }
 @media (max-width: 50em) {
@@ -242,6 +242,7 @@ header .logo-image {
 }
 .intro__content {
   padding-block: 6rem;
+  padding-inline: 3rem;
   text-align: center;
 }
 @media (max-width: 50em) {
@@ -249,6 +250,7 @@ header .logo-image {
     grid-row: 1;
     grid-column: 1/-1;
     padding-bottom: 0;
+    padding-inline: 0;
   }
 }
 .intro__cta {

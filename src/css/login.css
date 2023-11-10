@@ -97,9 +97,10 @@ label {
 
 input {
   padding: 9px;
+  font-family: inherit;
   font-size: 15px;
-  font-weight: 600;
-  color: rgb(52, 45, 29);
+  font-weight: 500;
+  color: #333;
   background-color: inherit;
   outline: none;
   border: 0;
@@ -132,7 +133,8 @@ input::placeholder {
 button {
   background-color: #1ae097;
   color: #fff;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   border: 0;
   font-size: 18px;
   font-weight: 600;
