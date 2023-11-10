@@ -606,6 +606,53 @@ img {
   font-size: 1.4rem;
 }
 
+.cookie__modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2.4rem;
+  border-radius: 9px;
+  background-color: #fff;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1529411765);
+  background-image: linear-gradient(to top left, #fff, hsla(158, 90%, 39%, 0.039));
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.cookie__modal .heading-box {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  grid-column: 1/span 2;
+  margin-bottom: 1.2rem;
+}
+.cookie__modal p {
+  width: 50ch;
+  grid-row: 2;
+  grid-column: 1/span 2;
+}
+@media (max-width: 40em) {
+  .cookie__modal p {
+    width: 35ch;
+  }
+}
+.cookie__modal a:is(:link, :visited) {
+  color: #1e9469;
+  transform: color 0.3s;
+}
+.cookie__modal a:is(:hover, :active) {
+  color: #1ae097;
+}
+.cookie__img {
+  height: 3.2rem;
+  aspect-ratio: 1/1;
+  display: block;
+}
+.cookie__heading {
+  font-size: 2.8rem;
+}
+
 .login-overlay {
   position: fixed;
   background-color: aliceblue;
