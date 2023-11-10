@@ -63,10 +63,11 @@ const operationEls = document.querySelectorAll(".operations__content");
 operationEls.forEach((el) => el.classList.add("active"));
 
 const contentObserver = new IntersectionObserver(
-  function (entries) {
+  function (entries, observer) {
     const [entry] = entries;
-    if (!entry.isIntersecting) entry.target.classList.add("active");
-    if (entry.isIntersecting) entry.target.classList.remove("active");
+    if (!entry.isIntersecting) return;
+    entry.target.classList.remove("active");
+    observer.unobserve(entry.target);
   },
   { root: null, threshold: 1 }
 );
