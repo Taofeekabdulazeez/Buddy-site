@@ -72,3 +72,22 @@ const contentObserver = new IntersectionObserver(
 );
 
 operationEls.forEach((el) => contentObserver.observe(el));
+
+const cookieModal = document.querySelector(".cookie__modal");
+// cookieModal.classList.add("hide");
+
+setTimeout(function () {
+  cookieModal.classList.add("show");
+}, 2000);
+
+const buttonAcceptCookie = document.querySelector(".btn--accept");
+const buttonDeclineCookie = document.querySelector(".btn--decline");
+
+[buttonAcceptCookie, buttonDeclineCookie].forEach((button) =>
+  button.addEventListener("click", function () {
+    setTimeout(function () {
+      cookieModal.style.opacity = 0;
+      cookieModal.style.display = "none";
+    }, 1000);
+  })
+);
