@@ -82,11 +82,10 @@ const contentObserver = new IntersectionObserver(
 operationEls.forEach((el) => contentObserver.observe(el));
 
 const cookieModal = document.querySelector(".cookie__modal");
-// cookieModal.classList.add("hide");
 
 setTimeout(function () {
   cookieModal.classList.add("show");
-}, 2000);
+}, 3000);
 
 const buttonAcceptCookie = document.querySelector(".btn--accept");
 const buttonDeclineCookie = document.querySelector(".btn--decline");
