@@ -64,16 +64,13 @@ operationEls.forEach((el) => el.classList.add("active"));
 
 const contentObserver = new IntersectionObserver(
   function (entries, observer) {
-    const [entry] = entries;
-
     const mediaQueries = window.matchMedia("(max-width: 800px)");
-    console.log(mediaQueries.matches);
     if (!mediaQueries.matches) {
       operationEls.forEach((el) => el.classList.remove("active"));
-
       return;
     }
 
+    const [entry] = entries;
     if (!entry.isIntersecting) return;
 
     entry.target.classList.remove("active");
